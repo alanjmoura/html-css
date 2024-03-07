@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO DE CAIXAS</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* SIMPLIFICANDO CÓDIGO CSS COM SHORTHAND */
+
+            border: 10px solid darkslategray;
+
+            padding: 10px 10px 10px 10px;
+
+            margin: 10px auto 10px auto;
+                  /* Primeiro valor: CIMA - top
+                     Segundo valor: DIREITA - right
+                     Terceiro valor: BAIXO - bottom
+                     Quarto valor: ESQUERDA - left
+                 */
+
+            outline: 5px dashed red;
+        }
+        
+        .rever {
+            background-color: lightgray;
+            border: none;
+        }
+        a {
+            border-width: 6px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        div {
+            color: white;
+            background-color: black;
+        }
+
+        span {
+            color: white;
+            background-color: black;
+        }
+        .especial {
+            text-align: center;
+            color: white;
+            background-color: red;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1> 
+
+    <p>Parágrafos também são exemplo de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+
+    <h2 class="rever">Exemplo de Box-Level e Inline-Level</h2>
+
+    <div> Exemplo 01 div é box-level</div>
+
+    <span>Exemplo 01 inline-level</span> 
+
+    <span class="especial">Exemplo 02 inline-level</span> 
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+        /*
+
+        #  = id
+        .  = class
+        :  = pseudo_class
+        ::  = pseudo_element
+        >  = filho
+        
+        */  
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited
+
+        a:hover {
+            color: black
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: lawngreen;
+            color: white;
+        }
+        .especial::before {
+            content: '⟶';
+        }
+        .especial::after {
+            content: '⟵';
+        }
+        
