@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando background-image</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+            background-size: 125em 62.5em;
+            background-repeat: no-repeat;
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        div#image01 {
+            background-color: gray;
+        }
+        div#image02 {
+            background-image: linear-gradient(to bottom, orange, white, red);
+        }
+        div#image03 {
+            background-image: url(imagens/pattern002.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="image01">
+
+    </div>
+    <div class="quadrado" id="image02">
+
+    </div>
+    <div class="quadrado" id="image03">
+
+    </div>
+</body>
+</html>
