@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navgeação entre iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo delectus! Facilis voluptatibus blanditiis quam quisquam doloribus dolore similique fugiat. Odit molestiae harum, nesciunt minus dolore dicta minima et quas.</p>
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="./paginas-extras/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="./paginas-extras/pag03.html" target="frame">Terceira página</a></li>
+    </ul>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quisquam eos veritatis rerum cum aliquid, beatae corrupti quos! Iste doloribus incidunt, assumenda quidem provident illo? Dolores distinctio nam excepturi odio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ipsam tempora quod labore, repellendus eum pariatur molestiae architecto rerum, enim dignissimos dolore voluptatem sit. Doloremque vel quis debitis sint aliquid!</p>
+
+    <iframe name="frame" srcdoc="<h1>Introduzindo código dentro do iframe</h1><p>Lorem</p>"></iframe>
+    <p>Infelizmente seu navegador não é compatível.</p>
+</body>
+</html>
