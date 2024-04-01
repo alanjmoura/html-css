@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXTAREA E DATALIST</title>
+
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro-nome.php" method="post" autocomplete="on">
+        <p>
+            <label for="ies">Estado:</label>
+            <select name="es" id="ies">
+
+                <option value="">-- Escolha --</option>
+            <optgroup label="Melhores Estados">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+            </optgroup>
+            <optgroup label="Melhores Estados">
+                <option value="PR">Paraná</option>
+                <option value="CE">Ceará</option>
+                <option value="BH">Bahia</option>
+                <option value="PE">Pernambuco</option>
+            </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Escreva ou escolha">
+            <datalist id="lstprof">
+                <option>Jogador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Engenheiro</option>
+                <optio>Médico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="textarea">Mensagem:</label><br>
+            <textarea name="etextarea" id="textarea" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="reset" value="Limpar dados">
+        <input type="submit" value="Enviar dados">
+    </form>
+
+</body>
+</html>
