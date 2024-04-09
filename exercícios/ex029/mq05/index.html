@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="estilos/style.css">
 
+    <link rel="stylesheet" href="media-query.css">
+
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Menu Responsivo</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu ()">menu</i>
@@ -40,6 +42,15 @@
 </html>
 
 <script>
+
+function  mudouTamanho() {
+
+if (window.innerWidth >= 768) {
+    menu.style.display = "block"
+} else {
+    menu.style.display = "none"
+}   
+}
 
 function clickMenu() {
 

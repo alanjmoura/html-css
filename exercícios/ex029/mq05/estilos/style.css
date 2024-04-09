@@ -12,10 +12,13 @@ body,html {
     height: 100vh;
     background-color: lightslategray;
 }
-
-header > h1 {
+header {
+    background-color: rgb(56, 56, 56);
+}
+h1 {
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
 menu {
@@ -46,14 +49,15 @@ a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(56, 56, 56);
     color: white;
-    border-top: 2px solid lightslategray;
+    border-top: 2px solid lightslategray
 }
 
 a:hover {
     background-color: black;
-    transition-duration: 1s;
+    color: white;
+    transition-duration: 0.5s;
 }
 
 main {
